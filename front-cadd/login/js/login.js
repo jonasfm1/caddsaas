@@ -1,13 +1,16 @@
 $(document).ready(function () {
     $("login-system").submit(function (event) {
+      // VERIFICAR DE CAMPOS ESTAO VAZIOS E RETORNAR ERRO
+
       var formData = {
         userSystem: $("#user-system").val(),
-        passwordSystem: $("#password-system").val(),
+        passwordSystem: $("#user-password").val(),
+        passwordCompany: $("#user-company").val(),
       };
   
       $.ajax({
         type: "POST",
-        url: "login-system.php",
+        url: "index.php",
         data: formData,
         dataType: "json",
         encode: true,

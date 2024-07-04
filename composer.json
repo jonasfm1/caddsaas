@@ -1,0 +1,17 @@
+{
+    "name": "jonasferutcci/caddsaas",
+    "autoload": {
+        "psr-4": {
+            "Jonasferutcci\\Caddsaas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jonas Ferutcci",
+            "email": "jonas.ferutcci@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

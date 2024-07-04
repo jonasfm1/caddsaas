@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
         <link rel="stylesheet" href="../css/login-page.css">
-        <script src="../js/login.js"></script>
 
         <title>Home Page</title>
     </head>
@@ -41,7 +40,7 @@
                             <!-- FORM INPUTS -->
                             <div class="col-md-5 pe-0">
                                 <div class="form-left h-100 py-5 px-5">
-                                    <form id="login-system" action="../../../back-cadd/login/login-system.php" method="POST" class="row g-4">
+                                    <form id="login-system" action="../../../back-cadd/login/index.php" method="POST" class="row g-4">
                                             <div class="col-12">
                                                 <label>
                                                     Username
@@ -55,11 +54,16 @@
                                                 </div>
                                             </div>
 
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                                <input type="text" id="user-company" name="user-company" class="form-control" placeholder="Enter Username">
+                                            </div>
+
                                             <div class="col-12">
                                                 <label>Password<span class="text-danger">*</span></label>
                                                 <div class="input-group">
                                                     <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
-                                                    <input type="password" id="password-system" name="password-system" class="form-control" placeholder="Enter Password">
+                                                    <input type="password" id="user-password" name="user-password" class="form-control" placeholder="Enter Password">
                                                 </div>
                                             </div>
 
@@ -86,5 +90,6 @@
                 </div>
             </div>
         </div>
+        <script src="../js/login.js"></script>
     </body>
 </html>
