@@ -9,7 +9,11 @@
     width: 70%;
 }
 .form-img img{
-    max-width: 100%
+    position: relative;
+    max-width: 100%;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 .form-img button{
     position: absolute;

@@ -5,7 +5,7 @@ $(document).ready(function () {
       var formData = {
         userSystem: $("#user-system").val(),
         passwordSystem: $("#user-password").val(),
-        passwordCompany: $("#user-company").val(),
+        company: $("#user-company").val(),
       };
   
       $.ajax({
@@ -14,10 +14,9 @@ $(document).ready(function () {
         data: formData,
         dataType: "json",
         encode: true,
-      }).done(function (data) {
+      }).done(function(data) {
         console.log(data);
       });
-  
       event.preventDefault();
     });
   });
