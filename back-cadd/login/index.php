@@ -18,7 +18,7 @@
         echo var_dump($_SESSION['user_system']);
         echo var_dump($_SESSION['user_company']);
         
-        // header("location:welcome.php");
+        header("location:welcome.html");
     }
 
     CloseCon($conn);
